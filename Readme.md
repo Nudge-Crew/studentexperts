@@ -16,7 +16,7 @@ adding installed requirements to requirements.txt:
 
 alternatively if you have the pkg-resources=0.0.0 bug use:
 
-```pip freeze | grep -v "pkgresources" > requirements.txt
+```pip freeze | grep -v "pkgresources" > requirements.txt```
 
 
 ## Google cloud commands
@@ -25,4 +25,6 @@ deploying function:
 
 ```cloud functions deploy {function} --runtime python37 --trigger-http```
 
+getting httpsTrigger.url from function:
 
+```gcloud functions describe {function}```

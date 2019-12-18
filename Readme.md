@@ -23,7 +23,7 @@ alternatively if you have the pkg-resources=0.0.0 bug use:
 
 deploying function:
 
-```cloud functions deploy {function} --runtime python37 --trigger-http```
+```gcloud functions deploy {function} --runtime python37 --trigger-http --region=europe-west1```
 
 getting httpsTrigger.url from function:
 
